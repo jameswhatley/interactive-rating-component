@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(216, 12%, 54%);
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 3.5rem 3.25rem 4rem 3.25rem;
+  border-radius: 1.5rem;
+}
+
+img[alt="star"] {
+  padding: 1.25rem;
+  background-color: hsl(214, 22%, 22%);
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 1rem 1.75rem;
+  background-color: hsl(214, 22%, 22%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+ul li.active {
+  background-color: hsl(217, 12%, 63%);
+  color: var(--white);
+}
+
+input[type="submit"] {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.8em;
+  border-radius: 2.5rem;
+  background-color: var(--orange);
+  border: none;
+  outline: none;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thanks .imgContainer,
+.scoreComponent {
+  display: flex;
+  justify-content: center;
+}
+
+.scoreComponent p {
+  color: var(--orange);
+  background-color: hsl(214, 22%, 22%);
+  padding: 0.45em 0.75em;
+  margin: 2.5rem 0 1.25rem 0;
+  border-radius: 1.5rem;
+}
+
+.textContent {
+  text-align: center;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.attribution a {
+  color: var(--orange);
+}
